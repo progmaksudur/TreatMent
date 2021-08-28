@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="520.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.InformationAdminViewController">
+   <effect>
+      <InnerShadow>
+         <color>
+            <Color red="0.3843137323856354" green="0.0313725508749485" blue="0.5921568870544434" />
+         </color>
+      </InnerShadow>
+   </effect>
+   <children>
+      <VBox prefHeight="500.0" prefWidth="753.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <HBox prefHeight="47.0" prefWidth="753.0" style="-fx-background-color: white;">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="135.0" text="Hospital Name" textFill="#4d0e7c">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="hospital_name_textfield" prefHeight="31.0" prefWidth="556.0" promptText="hospital name">
+                     <effect>
+                        <InnerShadow>
+                           <color>
+                              <Color red="0.3843137323856354" green="0.0313725508749485" blue="0.5921568870544434" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="47.0" prefWidth="753.0" style="-fx-background-color: white;">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="135.0" text="Hospital Address" textFill="#4d0e7c">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="hospital_address_textfield" prefHeight="31.0" prefWidth="558.0" promptText="address">
+                     <effect>
+                        <InnerShadow>
+                           <color>
+                              <Color red="0.3843137323856354" green="0.0313725508749485" blue="0.5921568870544434" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="47.0" prefWidth="753.0" style="-fx-background-color: white;">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="135.0" text="Helpline" textFill="#4d0e7c">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="hospital_numbers_textfield" prefHeight="31.0" prefWidth="556.0" promptText="phone numbers">
+                     <effect>
+                        <InnerShadow>
+                           <color>
+                              <Color red="0.3843137323856354" green="0.0313725508749485" blue="0.5921568870544434" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="47.0" prefWidth="753.0" style="-fx-background-color: white;">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="135.0" text="Hospital Website" textFill="#4d0e7c">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="hospital_website_textfield" prefHeight="31.0" prefWidth="556.0" promptText="website">
+                     <effect>
+                        <InnerShadow>
+                           <color>
+                              <Color red="0.3843137323856354" green="0.0313725508749485" blue="0.5921568870544434" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="47.0" prefWidth="753.0" style="-fx-background-color: white;">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="135.0" text="Hospital Email" textFill="#4d0e7c">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="hospital_emails_textfield" prefHeight="31.0" prefWidth="268.0" promptText="email">
+                     <effect>
+                        <InnerShadow>
+                           <color>
+                              <Color red="0.3843137323856354" green="0.0313725508749485" blue="0.5921568870544434" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </TextField>
+                  <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="107.0" text="Hospital Type" textFill="#4d0e7c">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="hospital_type_textfield" prefHeight="31.0" prefWidth="171.0" promptText="privete/govt">
+                     <effect>
+                        <InnerShadow>
+                           <color>
+                              <Color red="0.3843137323856354" green="0.0313725508749485" blue="0.5921568870544434" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+
+<AnchorPane prefHeight="520.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.UserDoctorController">
+   <children>
+      <VBox layoutX="79.0" layoutY="14.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <TableView fx:id="userDoctorViewList" prefHeight="416.0" prefWidth="980.0">
+               <columns>
+                  <TableColumn fx:id="doctor_name_col" prefWidth="140.0" text="Doctor" />
+                  <TableColumn fx:id="doctor_specialist_col" prefWidth="109.0" text="Specialist" />
+                  <TableColumn fx:id="doctor_degree_col" prefWidth="108.0" text="Degree" />
+                  <TableColumn fx:id="doctor_visit_day_col" prefWidth="98.0" text="Doctor Visit Day" />
+                  <TableColumn fx:id="doctor_visit_time_col" prefWidth="115.0" text="Doctor Visit Time" />
+                  <TableColumn fx:id="doctor_chamber_col" prefWidth="126.0" text="Chamber" />
+                  <TableColumn fx:id="doctor_visit_fees_col" prefWidth="88.0" text="Visit Fees" />
+                  <TableColumn fx:id="doctor_hospital_name_col" maxWidth="248.0" prefWidth="194.0" text="Hospital Name" />
+               </columns>
+            </TableView>
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="90.0" style="-fx-background-color: white;">
+               <children>
+                  <TextField fx:id="searchNameTextField" onKeyTyped="#searchName" prefHeight="34.0" prefWidth="230.0" promptText="Name" style="-fx-background-color: white; -fx-alignment: center; -fx-border-color: #F0F0F2; -fx-border-width: 0 0 2 0; -fx-border-radius: 100;">
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                     <effect>
+                        <InnerShadow>
+                           <color>
+                              <Color red="0.21176470816135406" green="0.04313725605607033" blue="0.32156863808631897" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <TextField fx:id="searchHospitalTextField" onKeyTyped="#searchHospital" prefHeight="34.0" prefWidth="230.0" promptText="Hospital" style="-fx-background-color: white; -fx-alignment: center; -fx-border-color: #F0F0F2; -fx-border-width: 0 0 2 0; -fx-border-radius: 100;">
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                     <effect>
+                        <InnerShadow>
+                           <color>
+                              <Color red="0.21176470816135406" green="0.04313725605607033" blue="0.32156863808631897" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <TextField fx:id="searchSpecialistTextField" onKeyTyped="#searchSpecialist" prefHeight="34.0" prefWidth="230.0" promptText="Specialist" style="-fx-background-color: white; -fx-alignment: center; -fx-border-color: #F0F0F2; -fx-border-width: 0 0 2 0; -fx-border-radius: 100;">
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                     <effect>
+                        <InnerShadow>
+                           <color>
+                              <Color red="0.21176470816135406" green="0.04313725605607033" blue="0.32156863808631897" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+         </children>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+
+<AnchorPane prefHeight="520.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.UserHospitalController">
+   <children>
+      <VBox layoutX="79.0" layoutY="14.0" prefHeight="500.0" prefWidth="986.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <TableView fx:id="userHospitalList" prefHeight="397.0" prefWidth="984.0">
+              <columns>
+                <TableColumn fx:id="hospital_name_col" prefWidth="118.0" text="Hospital Name" />
+                <TableColumn fx:id="hospital_address_col" prefWidth="123.0" text="Address" />
+                  <TableColumn fx:id="hospital_numbers_col" prefWidth="91.0" text="HelpLine" />
+                  <TableColumn fx:id="hospital_website_col" prefWidth="106.0" text="Website" />
+                  <TableColumn fx:id="icu_rate_col" prefWidth="61.0" text="ICU" />
+                  <TableColumn fx:id="ccu_rate_col" prefWidth="57.0" text="CCU" />
+                  <TableColumn fx:id="acCabin_rate_col" prefWidth="106.0" text="AC Cabin" />
+                  <TableColumn fx:id="noneAcCabinDouble_rate_col" prefWidth="96.0" text="Double Cabin" />
+                  <TableColumn fx:id="noneAcCabineSingle_rate_col" prefWidth="91.0" text="Single Cabin" />
+                  <TableColumn fx:id="localBed_rate_col" prefWidth="67.0" text="Local Bed" />
+                  <TableColumn fx:id="hospital_type_col" prefWidth="69.0" text=" Type" />
+              </columns>
+            </TableView>
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="103.0" style="-fx-background-color: white;">
+               <children>
+                  <TextField fx:id="searchHospitalTextField" onKeyTyped="#search" prefHeight="34.0" prefWidth="397.0" promptText="Hospital" style="-fx-background-color: white; -fx-alignment: center; -fx-border-color: #F0F0F2; -fx-border-width: 0 0 2 0; -fx-border-radius: 100;">
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                     <effect>
+                        <InnerShadow>
+                           <color>
+                              <Color red="0.21176470816135406" green="0.04313725605607033" blue="0.32156863808631897" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+         </children>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </VBox>
+   </children>
+</AnchorPane>

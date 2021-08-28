@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.loginController">
+    <children>
+        <StackPane layoutY="14.0" prefHeight="387.0" prefWidth="600.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <effect>
+                <DropShadow />
+            </effect>
+            <children>
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <VBox style="-fx-background-color: #360B52;" HBox.hgrow="ALWAYS">
+                            <effect>
+                                <InnerShadow>
+                                    <color>
+                                        <Color red="0.5263158082962036" green="0.021929824724793434" blue="0.021929824724793434" />
+                                    </color>
+                                </InnerShadow>
+                            </effect></VBox>
+                        <VBox style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+                            <effect>
+                                <InnerShadow>
+                                    <color>
+                                        <Color red="0.30258214473724365" green="0.009399999864399433" blue="0.4699999988079071" opacity="0.8299999833106995" />
+                                    </color>
+                                </InnerShadow>
+                            </effect></VBox>
+                    </children>
+                </HBox>
+                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                    <StackPane.margin>
+                        <Insets bottom="45.0" left="45.0" right="45.0" top="45.0" />
+                    </StackPane.margin>
+                    <children>
+                        <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="250.0" prefWidth="300.0" style="-fx-background-color: white;">
+                            <effect>
+                                <InnerShadow />
+                            </effect>
+                            <children>
+                                <Label style="-fx-font-weight: Bold;" text="Log In">
+                                    <font>
+                                        <Font name="Arial Bold" size="20.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets top="10.0" />
+                                    </VBox.margin>
+                           <textFill>
+                              <LinearGradient cycleMethod="REFLECT" endX="0.4714285714285714" endY="0.5761904761904761" startX="0.4857142857142857" startY="0.04761904761904763">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="0.18609893321990967" green="0.6099029183387756" blue="0.8552631735801697" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                                </Label>
+                                <HBox maxWidth="-Infinity" prefWidth="250.0" style="-fx-background-color: white; -fx-border-color: #262524; -fx-border-width: 0 0 1 0;">
+                                    <VBox.margin>
+                                        <Insets top="10.0" />
+                                    </VBox.margin>
+                                    <children>
+                                        <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                                            <HBox.margin>
+                                                <Insets bottom="5.0" left="4.0" right="2.0" top="5.0" />
+                                            </HBox.margin>
+                                 <image>
+                                    <Image url="@../image/icontexto_user_web20_yahoo.png" />
+                                 </image>
+                                        </ImageView>
+                                        <TextField fx:id="userEmailTextField" prefHeight="30.0" prefWidth="218.0" promptText="Email" style="-fx-background-radius: 100;" HBox.hgrow="ALWAYS">
+                                            <HBox.margin>
+                                                <Insets top="2.0" />
+                                            </HBox.margin>
+                                        </TextField>
+                                    </children>
+                                </HBox>
+                                <HBox layoutX="35.0" layoutY="53.0" maxWidth="-Infinity" prefWidth="250.0" style="-fx-background-color: white; -fx-border-color: #262524; -fx-border-width: 0 0 1 0;">
+                                    <children>
+                                        <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                            <HBox.margin>
+                                                <Insets bottom="5.0" left="4.0" right="2.0" top="5.0" />
+                                            </HBox.margin>
+                                 <image>
+                                    <Image url="@../image/key_lock.png" />
+                                 </image>
+                                        </ImageView>
+                                        <PasswordField fx:id="passwordField" prefHeight="30.0" prefWidth="209.0" promptText="Password" style="-fx-background-radius: 100;" HBox.hgrow="ALWAYS">
+                                            <HBox.margin>
+                                                <Insets top="3.0" />
+                                            </HBox.margin>
+                                        </PasswordField>
+                                    </children>
+                                </HBox>
+                                <Button mnemonicParsing="false" onAction="#loginOnClick" prefWidth="150.0" style="-fx-background-color: #360B52; -fx-background-radius: 100; -fx-text-fill: white;" text="Log In">
+                                    <VBox.margin>
+                                        <Insets bottom="30.0" top="10.0" />
+                                    </VBox.margin>
+                                    <font>
+                                        <Font name="System Bold" size="12.0" />
+                                    </font>
+                                </Button>
+                        <Label fx:id="loginLable" prefHeight="17.0" prefWidth="150.0" style="-fx-background-color: white;" />
+                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: white;">
+                                    <children>
+                                        <Label prefHeight="22.0" prefWidth="136.0" style="-fx-alignment: center;" text="Create New Account" textFill="#360b52">
+                                            <font>
+                                                <Font name="Arial" size="12.0" />
+                                            </font>
+                                        </Label>
+                                        <Button mnemonicParsing="false" onAction="#goCreateOnClick" prefHeight="18.0" prefWidth="76.0" style="-fx-background-radius: 120; -fx-background-color: #360B52; -fx-text-fill: white;" text="Click" />
+                                    </children>
+                                </HBox>
+                            </children>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                        </VBox>
+                    </children>
+                </VBox>
+            </children>
+        </StackPane>
+    </children>
+</AnchorPane>

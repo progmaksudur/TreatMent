@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+
+<AnchorPane prefHeight="520.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.AdminPackgeViewController">
+   <children>
+      <VBox layoutX="79.0" layoutY="14.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <TableView fx:id="allPackge_tableview" prefHeight="416.0" prefWidth="980.0">
+               <columns>
+                  <TableColumn fx:id="packge_name_col" prefWidth="210.0" text="package Name" />
+                  <TableColumn fx:id="packge_detail_col" prefWidth="293.0" text="Package Details" />
+                  <TableColumn fx:id="packge_include_col" prefWidth="337.0" text="Package Include" />
+                  <TableColumn fx:id="packge_price_col" prefWidth="139.0" text="Package Price" />
+               </columns>
+            </TableView>
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="90.0" style="-fx-background-color: white;">
+               <children>
+                  <TextField fx:id="searchTestTextField" onKeyTyped="#search" prefHeight="34.0" prefWidth="230.0" promptText="Package Name" style="-fx-background-color: white; -fx-alignment: center; -fx-border-color: #F0F0F2; -fx-border-width: 0 0 2 0; -fx-border-radius: 100;">
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                     <effect>
+                        <InnerShadow>
+                           <color>
+                              <Color red="0.21176470816135406" green="0.04313725605607033" blue="0.32156863808631897" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+         </children>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </VBox>
+   </children>
+</AnchorPane>
